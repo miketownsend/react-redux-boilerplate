@@ -1,0 +1,66 @@
+.show-detail__main {
+}
+
+.show-detail__list {
+  padding-left: 0;
+}
+
+.show-detail__list li {
+  display: flex;
+  justify-content: start;
+  height: 5em;
+
+  list-style: none;
+  border-bottom: 1px #bbb solid;
+  padding: 1em 0;
+
+  label, span {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  label {
+    color: $font-color-strong;
+  }
+}
+
+.show-detail__list-image {
+  display: inline-block;
+  flex: 0 0 54px;
+  align-self: center;
+  padding-top: 0;
+  width: 54px;
+  height: 54px;
+  margin-right: 1em;
+  border: 3px solid #e6e6e6;
+  border-radius: 27px;
+  overflow: hidden;
+}
+
+.show-detail__list-label {
+  align-self: center;
+  flex: 0 0 150px;
+}
+
+.show-detail__list-content {
+  align-self: center;
+  flex: 1 0 200px;
+}
+
+/* Phones Landscape + Tablets ----------- */
+@media only screen and (min-width : $breakpoint-phone + 1px) {
+  .show-detail__main {
+    padding-top: 4em;
+    margin-top: -6em;
+  }
+}
+
+/* Laptops ----------- */
+@media only screen and (min-width : $breakpoint-laptop + 1px) {
+
+}
+
+/* Desktops ----------- */
+@media only screen and (min-width : $breakpoint-desktop + 1px) {
+
+}

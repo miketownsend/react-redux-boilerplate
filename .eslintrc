@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise",
+    "mocha"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "globals": {
+    "__DEV__"      : false,
+    "__TEST__"     : false,
+    "__PROD__"     : false,
+    "__COVERAGE__" : false,
+    "expect": false,
+    "mock": false,
+    "helpers": false,
+    "CanvasJS": false
+  },
+  "rules": {
+    "key-spacing"          : 0,
+    "camelcase"            : 0,
+    "indent"               : ["error", 2, { "SwitchCase": 1 }],
+    "jsx-quotes"           : ["error", "prefer-single"],
+    "max-len"              : ["error", 120, 2],
+    "object-curly-spacing" : ["error", "always"],
+    "semi"                 : ["error", "never"],
+    "no-fallthrough"       : ["error", { "commentPattern": "break[\\s\\w]*omitted" }],
+    "react/prop-types"     : ["error", { "ignore": ["children", "className"] }]
+  }
+}

@@ -1,0 +1,95 @@
+.page {
+  background-color: $page-background;
+  height: 100%;
+}
+
+.page__content {
+  height: 100%;
+  padding-left: $page-gutters;
+  padding-right: $page-gutters;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+  flex-grow: 1;
+  background-color: white;
+  padding: 1em $page-gutters;
+  margin-left: -$page-gutters;
+  margin-right: -$page-gutters;
+}
+
+.page__columns {
+  height: 100%;
+  width: 100%;
+}
+
+.page__column {
+  float: none;
+}
+
+/* Phones Landscape + Tablets ----------- */
+@media only screen and (min-width : $breakpoint-phone + 1px) {
+  .page__content {
+    padding-left: 2*$page-gutters;
+    padding-right: 2*$page-gutters;
+  }
+
+  .page__main {
+    padding: 1em 2*$page-gutters;
+    margin-left: -2*$page-gutters;
+    margin-right: -2*$page-gutters;
+  }
+}
+
+/* Laptops ----------- */
+@media only screen and (min-width : $breakpoint-laptop + 1px) {
+  .page__content {
+    padding-left: 4*$page-gutters;
+    padding-right: 4*$page-gutters;
+  }
+
+  .page__main {
+    padding: 1em 4*$page-gutters;
+    margin-left: -4*$page-gutters;
+    margin-right: -4*$page-gutters;
+  }
+
+  .page__column {
+    float: left;
+    width: 50%;
+
+    &:nth-child(1) {
+      padding-right: $page-gutters;
+    }
+
+    &:nth-child(2) {
+      padding-left: $page-gutters;
+    }
+  }
+}
+
+/* Desktops ----------- */
+@media only screen and (min-width : $breakpoint-desktop + 1px) {
+  .page__content {
+    padding-left: 8*$page-gutters;
+    padding-right: 8*$page-gutters;
+  }
+
+  .page__main {
+    padding: 1em 8*$page-gutters;
+    margin-left: -8*$page-gutters;
+    margin-right: -8*$page-gutters;
+  }
+
+  .page__column {
+    &:nth-child(1) {
+      padding-right: $page-gutters*2;
+    }
+
+    &:nth-child(2) {
+      padding-left: $page-gutters*2;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.image {
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  width: 100%;
+  padding-top: 100%; /* Overridden in component */
+  overflow:hidden;
+  text-align: center;
+  font-size: 2em;
+  background-color: #ddd;
+
+  img {
+    position: absolute;
+    z-index: 10;
+  }
+
+  &.image-height img {
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.image-width img {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  i {
+    color: lighten($font-color, 20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+  }
+}

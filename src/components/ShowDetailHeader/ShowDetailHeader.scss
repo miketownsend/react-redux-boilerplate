@@ -1,0 +1,43 @@
+.show-detail-header {
+}
+
+.show-detail-header__image-wrapper {
+  float: none;
+  width: 100%;
+  max-width: 210px;
+  margin: auto;
+
+  .responsive-image {
+    width: 100%;
+  }
+}
+
+.show-detail-header__title-block {
+  float: none;
+}
+
+/* Phones Landscape + Tablets ----------- */
+@media only screen and (min-width : $breakpoint-phone + 1px) {
+  .show-detail-header__image-wrapper {
+    float: left;
+    margin-right: 1em;
+  }
+
+  .show-detail-header__title-block {
+  }
+}
+
+/* Laptops ----------- */
+@media only screen and (min-width : $breakpoint-laptop + 1px) {
+  .show-detail-header__image-wrapper {
+    float: left;
+    margin-right: 2em;
+  }
+
+  .show-detail-header__title-block {
+  }
+}
+
+/* Desktops ----------- */
+@media only screen and (min-width : $breakpoint-desktop + 1px) {
+}

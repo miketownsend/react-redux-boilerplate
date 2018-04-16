@@ -1,0 +1,5 @@
+Example Header
+
+```jsx
+<Header />
+```

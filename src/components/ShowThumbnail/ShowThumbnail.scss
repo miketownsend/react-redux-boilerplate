@@ -1,0 +1,20 @@
+.show-thumbnail {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+
+  &.in {
+    opacity: 1;
+  }
+}
+
+.show-thumbnail label {
+  display: block;
+  height: 2.5em;
+  overflow: hidden;
+  margin-top: 1em;
+}
+

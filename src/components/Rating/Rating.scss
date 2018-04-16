@@ -1,0 +1,30 @@
+.rating {
+  height: 1em;
+  padding-top: 0.5em;
+  width: 100%;
+  font-size: 1.2em;
+
+  i {
+    margin-right: 5px;
+  }
+
+  i:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.rating__top {
+  display: flex;
+  flex-wrap: none;
+
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.rating__bottom {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}

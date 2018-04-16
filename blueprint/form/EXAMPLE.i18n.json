@@ -1,0 +1,9 @@
+{
+  "en": {
+    "title": "Update a method:",
+    "fields": {
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}
